@@ -21,13 +21,13 @@ USER jovyan
 # RUN conda install -y scikit-learn
 
 RUN pip install --no-cache-dir networkx scipy && \
-    pip install --no-cache-dir networkx os    && \
-    pip install --no-cache-dir networkx numpy && \
-    pip install --no-cache-dir networkx cv2   && \
-    pip install --no-cache-dir networkx matplotlib && \
-    pip install --no-cache-dir networkx torch && \
-    pip install --no-cache-dir networkx segmentation_models_pytorch && \
-    pip install --no-cache-dir networkx multiprocessing
+    pip install --no-cache-dir os    && \
+    pip install --no-cache-dir numpy && \
+    pip install --no-cache-dir cv2   && \
+    pip install --no-cache-dir matplotlib && \
+    pip install --no-cache-dir torch && \
+    pip install --no-cache-dir segmentation_models_pytorch && \
+    pip install --no-cache-dir multiprocessing
 
 # Override command to disable running jupyter notebook at launch
 # CMD ["/bin/bash"]
